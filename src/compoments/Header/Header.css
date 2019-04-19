@@ -1,0 +1,15 @@
+.container-inLine{
+	line-height: 32px;
+}
+.line-black{
+	background-color: black;
+}
+.email-header{
+	color: white;
+	font-size: 14px;
+}
+.language-header{
+	color: white;
+	text-align: right;
+	font-size: 14px;
+}
