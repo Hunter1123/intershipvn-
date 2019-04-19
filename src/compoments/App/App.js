@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Button } from 'react-bootstrap';
 import Header from '../Header/Header';
 import Menu from '../Menu/Menu';
+import Slider from '../Slider/Slider';
 
 class App extends Component {
   render() {
@@ -11,6 +10,7 @@ class App extends Component {
     	<div id ="wallpaper">
 		    <Header />
 		    <Menu />
+		    <Slider />
       	</div>
     );
   }

@@ -1,0 +1,21 @@
+.slider-web{
+	padding-top: 30px;
+}
+.slider-content{
+    height: 232px;
+    background: white;
+    position: relative;
+    border:1px solid #ccc;
+}
+
+.slider-content:before {
+	content: "";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #ccc;
+    border-bottom: 13px solid transparent;
+    background: white;
+ 
+}

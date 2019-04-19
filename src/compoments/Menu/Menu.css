@@ -1,6 +1,50 @@
 .row-Menu{
 	background-color: #f8f9fa;
 }
-.nav-items{
-	color: black !important;
+.nav-items:hover, .nav-items:focus, .nav-items:active {
+    color: #555 !important;
+    text-decoration: none;
+}
+.nav-items {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+}
+.nav-items {
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    color: #000;
+}
+.nav-items::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #1A4BB6;
+    transform-origin: center top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+.nav-items:active::before {
+    background-color: #1A4BB6;
+}
+.nav-items:hover::before, .nav-items:focus::before {
+    transform-origin: center top;
+    transform: scale(1, 1);
+}
+
+.nav-bar-menu{
+	padding-right: 0;
+	padding-left: 0;
 }
